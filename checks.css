@@ -1,0 +1,83 @@
+.wbpage{
+	width: 100%;
+	margin: 0 auto;
+	border: 5px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	background-color: #e6e8eb;
+}
+.container{
+	width: 50%;
+	height: 1300px;
+}
+
+.aboutme{
+	width: 100%;
+	position: relative;
+	font-size: 20px;
+	top: 50px;
+}
+.qualities,.achiements{
+	width:25%;
+}
+
+.boxtextintro{
+	font-family:'Courier New';
+	font-size : 90px;
+	color:  white;
+	width:100%;
+	height:100px;
+	top: 4px;
+	text-align: center;
+	position : absolute;
+}
+img{
+	width:100%;
+	height:100%;
+}
+.boxIntro{
+	height:500px;
+	position: relative;
+
+}
+.qualities{
+	font-size: 20px;
+	background-color: #e6e8eb;
+}
+.achiements{
+	font-size: 20px;
+	background-color: #e6e8eb;
+}
+
+@media (max-width: 1000px){
+	.qualities{
+		order: 2;
+		width: 50%;
+	}
+	.container{
+		order: 1;
+		width: 100%;
+		height: 900px;
+	}
+	.achiements{
+		order: 3;
+		width: 50%;
+	}
+}
+
+@media (max-width: 600px){
+	.qualities{
+		order: 3;
+		width: 100%;
+	}
+	.container{
+		order: 1;
+		width: 100%;
+		height: 1100px;
+	}
+	.achiements{
+		order: 2;
+		width: 100%;
+	}
+}
